@@ -1,0 +1,48 @@
+body{
+    background-color: blueviolet;
+}
+
+.heading{
+        font-size: 20px;
+        border-radius: 30px;
+        color:aqua;
+        letter-spacing: 10px;
+        box-shadow:5px 5px 5px pink;
+}
+span{
+    font-size: 40px;
+}
+#camera , #result
+{
+  border: 5px ridge black;
+  width: 350px;
+  height: 300px; 
+  background-color: black;
+  border-radius: 60px;
+}
+.predict,.capture{
+    background-color: rgb(221, 27, 27);
+    color: darkorange;
+    box-shadow: 5px 5px 5px pink;
+    border-radius: 30px;
+  }
+  label{
+      border: 2px solid rgba(62, 81, 33, 0);
+      background-color: white;
+      border-radius: 20px;
+      padding: 5px;
+  }
+  .cam{
+    
+    background-color: white;
+    width: 370px;
+    height: 430px;
+    padding:10px;
+    border-radius:30px;
+    box-shadow: 5px 5px 5px grey;
+  }
+  input{
+    font-size:20px;
+    border-radius: 20px;
+  }
+  

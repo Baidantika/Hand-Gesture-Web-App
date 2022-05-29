@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>HAND GESTURE WEB APP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    
+        <link rel="stylesheet" type="text/css" href="style.css">
+      </head>
+    
+      <body>
+      <div class="container">
+        <center>
+          <br><br>
+        <input type="text" placeholder="Enter your name" id="input-1" style="background-color:rgb(0, 225, 255)" onchange="welcome()">
+        <div id="text"></div>
+      <br>
+        
+              <h3 class="btn btn-info heading">HAND GESTURE 
+    
+          <br><br>
+        <span>&#128077;</span>
+        <span>&#128076;</span>
+        <span>&#9996;</span>
+        <span>&#9995;</span>
+        <span>&#128406;</span>
+        <span>&#129304;</span>
+      </h3>
+      <br><br>
+          <p style="font-size: 22px;">Take a selfie of your gesture to know about it's meaning
+              <br>
+            <h3>On the following gestures the model is trained - </h3>
+            <br>
+            <span>&#9996;</span>|
+            <span>&#128077;</span>|
+            <span>&#9995;</span>|
+            <span>&#128076;</span>|
+            <span>&#129304;</span>
+        </p>
+        <br>
+        
+      
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <div class="cam">
+            <label>Webcam View  - </label>
+            <div id="camera"></div>
+            <br><br>
+            <button onclick="take_snapshot();" class="btn btn-info  capture">Capture Image</button>
+          </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Prediction 1 - </label>
+            <p class="gesture_name" id="result_gesture_name"></p>
+              <p class="gesture" id="update_gesture">
+            </p>
+    </div>
+            
+    
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <div class="cam">
+              <label>Snapshot - </label>
+            <div id="result"></div>
+            <br><br>
+            <button onclick="check();" class="btn btn-success predict">Predict Gesture</button>
+            </div>
+          </div>
+    
+            <br><br>
+    
+          </div>
+    
+        </center>
+    
+      </div>
+    
+    <script src="main.js"></script>
+    
+      </body>
+    
+    
+     
+</html>
